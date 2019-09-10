@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53DA8689-6831-4D7A-AD99-C189453AC4ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Planet Bodega</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>48-01 %281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Planet Bodega.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Planet Bodega.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.Office" />
+    <Import Include="Microsoft.Office.Interop" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.Entity" />
+    <Import Include="MySql.Data.Entity.Properties" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="MySql.Data.MySqlClient.Properties" />
+    <Import Include="MySql.Data.Types" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class_library.vb" />
+    <Compile Include="Codigos de Barra para Preinspección.Designer.vb">
+      <DependentUpon>Codigos de Barra para Preinspección.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Codigos de Barra para Preinspección.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crear_colores.Designer.vb">
+      <DependentUpon>crear_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crear_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crear_tallas.Designer.vb">
+      <DependentUpon>crear_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crear_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bodega_muerta.Designer.vb">
+      <DependentUpon>frm_bodega_muerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bodega_muerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_codigosdebarraasociados.Designer.vb">
+      <DependentUpon>frm_codigosdebarraasociados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_codigosdebarraasociados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_codigos_asociados.Designer.vb">
+      <DependentUpon>frm_codigos_asociados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_codigos_asociados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_colores.Designer.vb">
+      <DependentUpon>frm_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_colores_tallas.Designer.vb">
+      <DependentUpon>frm_colores_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_colores_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_articulo.Designer.vb">
+      <DependentUpon>frm_crear_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lineas_sublineas.Designer.vb">
+      <DependentUpon>frm_lineas_sublineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lineas_sublineas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lista_colores.Designer.vb">
+      <DependentUpon>frm_lista_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lista_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lista_tallas.Designer.vb">
+      <DependentUpon>frm_lista_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lista_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_loginacceso.Designer.vb">
+      <DependentUpon>frm_loginacceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_loginacceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_proveedores.Designer.vb">
+      <DependentUpon>frm_crear_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores3.Designer.vb">
+      <DependentUpon>frm_proveedores3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulos.Designer.vb">
+      <DependentUpon>frm_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_creacion_articulos_lotes.Designer.vb">
+      <DependentUpon>frm_creacion_articulos_lotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_creacion_articulos_lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filtrar_x_caja.Designer.vb">
+      <DependentUpon>frm_filtrar_x_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filtrar_x_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_articulos_lotes.Designer.vb">
+      <DependentUpon>frm_crear_articulos_lotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_articulos_lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_importacion.Designer.vb">
+      <DependentUpon>frm_crear_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_parametros_importacion.Designer.vb">
+      <DependentUpon>frm_parametros_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_parametros_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores.Designer.vb">
+      <DependentUpon>frm_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores2.Designer.vb">
+      <DependentUpon>frm_proveedores2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_stock_articulos.Designer.vb">
+      <DependentUpon>frm_stock_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_stock_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tallas.Designer.vb">
+      <DependentUpon>frm_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_articulo.Designer.vb">
+      <DependentUpon>frm_ver_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi_principal.Designer.vb">
+      <DependentUpon>mdi_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdi_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Codigos de Barra para Preinspección.resx">
+      <DependentUpon>Codigos de Barra para Preinspección.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crear_colores.resx">
+      <DependentUpon>crear_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crear_tallas.resx">
+      <DependentUpon>crear_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bodega_muerta.resx">
+      <DependentUpon>frm_bodega_muerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_codigosdebarraasociados.resx">
+      <DependentUpon>frm_codigosdebarraasociados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_codigos_asociados.resx">
+      <DependentUpon>frm_codigos_asociados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_colores_tallas.resx">
+      <DependentUpon>frm_colores_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_articulo.resx">
+      <DependentUpon>frm_crear_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lineas_sublineas.resx">
+      <DependentUpon>frm_lineas_sublineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lista_colores.resx">
+      <DependentUpon>frm_lista_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lista_tallas.resx">
+      <DependentUpon>frm_lista_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_loginacceso.resx">
+      <DependentUpon>frm_loginacceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulos.resx">
+      <DependentUpon>frm_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_colores.resx">
+      <DependentUpon>frm_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_creacion_articulos_lotes.resx">
+      <DependentUpon>frm_creacion_articulos_lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_articulos_lotes.resx">
+      <DependentUpon>frm_crear_articulos_lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_importacion.resx">
+      <DependentUpon>frm_crear_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filtrar_x_caja.resx">
+      <DependentUpon>frm_filtrar_x_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_parametros_importacion.resx">
+      <DependentUpon>frm_parametros_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores.resx">
+      <DependentUpon>frm_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores2.resx">
+      <DependentUpon>frm_proveedores2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores3.resx">
+      <DependentUpon>frm_proveedores3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_stock_articulos.resx">
+      <DependentUpon>frm_stock_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tallas.resx">
+      <DependentUpon>frm_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_articulo.resx">
+      <DependentUpon>frm_ver_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi_principal.resx">
+      <DependentUpon>mdi_principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banned User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_form_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="48-01 %281%29.ico" />
+    <Content Include="48-01.ico" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\page_search.png" />
+    <None Include="Resources\repeat.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\accept2.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\add_to_database.png" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\page_white_excel.png" />
+    <None Include="Resources\application_form.png" />
+    <None Include="Resources\accept1.png" />
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

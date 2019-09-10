@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="conexapplication" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="conexapplication (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.conexapplication" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTableTableAdapter" GeneratorDataComponentClassName="DataTableTableAdapter" Name="DataTable" UserDataComponentName="DataTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="conexapplication (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT * FROM `articulos`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ar_codigo" DataSetColumn="ar_codigo" />
+              <Mapping SourceColumn="ar_codigobarras" DataSetColumn="ar_codigobarras" />
+              <Mapping SourceColumn="ar_referencia" DataSetColumn="ar_referencia" />
+              <Mapping SourceColumn="ar_descripcion" DataSetColumn="ar_descripcion" />
+              <Mapping SourceColumn="ar_color" DataSetColumn="ar_color" />
+              <Mapping SourceColumn="ar_talla" DataSetColumn="ar_talla" />
+              <Mapping SourceColumn="ar_linea" DataSetColumn="ar_linea" />
+              <Mapping SourceColumn="ar_sublinea1" DataSetColumn="ar_sublinea1" />
+              <Mapping SourceColumn="ar_sublinea2" DataSetColumn="ar_sublinea2" />
+              <Mapping SourceColumn="ar_sublinea3" DataSetColumn="ar_sublinea3" />
+              <Mapping SourceColumn="ar_sublinea4" DataSetColumn="ar_sublinea4" />
+              <Mapping SourceColumn="ar_costo" DataSetColumn="ar_costo" />
+              <Mapping SourceColumn="ar_precio1" DataSetColumn="ar_precio1" />
+              <Mapping SourceColumn="ar_precio2" DataSetColumn="ar_precio2" />
+              <Mapping SourceColumn="ar_precioanterior" DataSetColumn="ar_precioanterior" />
+              <Mapping SourceColumn="ar_fechaingreso" DataSetColumn="ar_fechaingreso" />
+              <Mapping SourceColumn="ar_precioanterior2" DataSetColumn="ar_precioanterior2" />
+              <Mapping SourceColumn="ar_creadopor" DataSetColumn="ar_creadopor" />
+              <Mapping SourceColumn="ar_fecdescontinua" DataSetColumn="ar_fecdescontinua" />
+              <Mapping SourceColumn="ar_activo" DataSetColumn="ar_activo" />
+              <Mapping SourceColumn="ar_tasadesc" DataSetColumn="ar_tasadesc" />
+              <Mapping SourceColumn="ar_precioanttixy1" DataSetColumn="ar_precioanttixy1" />
+              <Mapping SourceColumn="ar_precioanttixy2" DataSetColumn="ar_precioanttixy2" />
+              <Mapping SourceColumn="ar_foto" DataSetColumn="ar_foto" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable" msprop:Generator_TableClassName="DataTableDataTable" msprop:Generator_TableVarName="tableDataTable" msprop:Generator_TablePropName="DataTable" msprop:Generator_RowDeletingName="DataTableRowDeleting" msprop:Generator_RowChangingName="DataTableRowChanging" msprop:Generator_RowEvHandlerName="DataTableRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableRowDeleted" msprop:Generator_UserTableName="DataTable" msprop:Generator_RowChangedName="DataTableRowChanged" msprop:Generator_RowEvArgName="DataTableRowChangeEvent" msprop:Generator_RowClassName="DataTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ar_codigo" msprop:Generator_ColumnVarNameInTable="columnar_codigo" msprop:Generator_ColumnPropNameInRow="ar_codigo" msprop:Generator_ColumnPropNameInTable="ar_codigoColumn" msprop:Generator_UserColumnName="ar_codigo" type="xs:int" />
+              <xs:element name="ar_codigobarras" msprop:Generator_ColumnVarNameInTable="columnar_codigobarras" msprop:Generator_ColumnPropNameInRow="ar_codigobarras" msprop:Generator_ColumnPropNameInTable="ar_codigobarrasColumn" msprop:Generator_UserColumnName="ar_codigobarras">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ar_referencia" msprop:Generator_ColumnVarNameInTable="columnar_referencia" msprop:Generator_ColumnPropNameInRow="ar_referencia" msprop:Generator_ColumnPropNameInTable="ar_referenciaColumn" msprop:Generator_UserColumnName="ar_referencia" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ar_descripcion" msprop:Generator_ColumnVarNameInTable="columnar_descripcion" msprop:Generator_ColumnPropNameInRow="ar_descripcion" msprop:Generator_ColumnPropNameInTable="ar_descripcionColumn" msprop:Generator_UserColumnName="ar_descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ar_color" msprop:Generator_ColumnVarNameInTable="columnar_color" msprop:Generator_ColumnPropNameInRow="ar_color" msprop:Generator_ColumnPropNameInTable="ar_colorColumn" msprop:Generator_UserColumnName="ar_color" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_talla" msprop:Generator_ColumnVarNameInTable="columnar_talla" msprop:Generator_ColumnPropNameInRow="ar_talla" msprop:Generator_ColumnPropNameInTable="ar_tallaColumn" msprop:Generator_UserColumnName="ar_talla" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_linea" msprop:Generator_ColumnVarNameInTable="columnar_linea" msprop:Generator_ColumnPropNameInRow="ar_linea" msprop:Generator_ColumnPropNameInTable="ar_lineaColumn" msprop:Generator_UserColumnName="ar_linea" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_sublinea1" msprop:Generator_ColumnVarNameInTable="columnar_sublinea1" msprop:Generator_ColumnPropNameInRow="ar_sublinea1" msprop:Generator_ColumnPropNameInTable="ar_sublinea1Column" msprop:Generator_UserColumnName="ar_sublinea1" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_sublinea2" msprop:Generator_ColumnVarNameInTable="columnar_sublinea2" msprop:Generator_ColumnPropNameInRow="ar_sublinea2" msprop:Generator_ColumnPropNameInTable="ar_sublinea2Column" msprop:Generator_UserColumnName="ar_sublinea2" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_sublinea3" msprop:Generator_ColumnVarNameInTable="columnar_sublinea3" msprop:Generator_ColumnPropNameInRow="ar_sublinea3" msprop:Generator_ColumnPropNameInTable="ar_sublinea3Column" msprop:Generator_UserColumnName="ar_sublinea3" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_sublinea4" msprop:Generator_ColumnVarNameInTable="columnar_sublinea4" msprop:Generator_ColumnPropNameInRow="ar_sublinea4" msprop:Generator_ColumnPropNameInTable="ar_sublinea4Column" msprop:Generator_UserColumnName="ar_sublinea4" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_costo" msprop:Generator_ColumnVarNameInTable="columnar_costo" msprop:Generator_ColumnPropNameInRow="ar_costo" msprop:Generator_ColumnPropNameInTable="ar_costoColumn" msprop:Generator_UserColumnName="ar_costo" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_precio1" msprop:Generator_ColumnVarNameInTable="columnar_precio1" msprop:Generator_ColumnPropNameInRow="ar_precio1" msprop:Generator_ColumnPropNameInTable="ar_precio1Column" msprop:Generator_UserColumnName="ar_precio1" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_precio2" msprop:Generator_ColumnVarNameInTable="columnar_precio2" msprop:Generator_ColumnPropNameInRow="ar_precio2" msprop:Generator_ColumnPropNameInTable="ar_precio2Column" msprop:Generator_UserColumnName="ar_precio2" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_precioanterior" msprop:Generator_ColumnVarNameInTable="columnar_precioanterior" msprop:Generator_ColumnPropNameInRow="ar_precioanterior" msprop:Generator_ColumnPropNameInTable="ar_precioanteriorColumn" msprop:Generator_UserColumnName="ar_precioanterior" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_fechaingreso" msprop:Generator_ColumnVarNameInTable="columnar_fechaingreso" msprop:Generator_ColumnPropNameInRow="ar_fechaingreso" msprop:Generator_ColumnPropNameInTable="ar_fechaingresoColumn" msprop:Generator_UserColumnName="ar_fechaingreso" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ar_precioanterior2" msprop:Generator_ColumnVarNameInTable="columnar_precioanterior2" msprop:Generator_ColumnPropNameInRow="ar_precioanterior2" msprop:Generator_ColumnPropNameInTable="ar_precioanterior2Column" msprop:Generator_UserColumnName="ar_precioanterior2" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_creadopor" msprop:Generator_ColumnVarNameInTable="columnar_creadopor" msprop:Generator_ColumnPropNameInRow="ar_creadopor" msprop:Generator_ColumnPropNameInTable="ar_creadoporColumn" msprop:Generator_UserColumnName="ar_creadopor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ar_fecdescontinua" msprop:Generator_ColumnVarNameInTable="columnar_fecdescontinua" msprop:Generator_ColumnPropNameInRow="ar_fecdescontinua" msprop:Generator_ColumnPropNameInTable="ar_fecdescontinuaColumn" msprop:Generator_UserColumnName="ar_fecdescontinua" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ar_activo" msprop:Generator_ColumnVarNameInTable="columnar_activo" msprop:Generator_ColumnPropNameInRow="ar_activo" msprop:Generator_ColumnPropNameInTable="ar_activoColumn" msprop:Generator_UserColumnName="ar_activo" type="xs:short" minOccurs="0" />
+              <xs:element name="ar_tasadesc" msprop:Generator_ColumnVarNameInTable="columnar_tasadesc" msprop:Generator_ColumnPropNameInRow="ar_tasadesc" msprop:Generator_ColumnPropNameInTable="ar_tasadescColumn" msprop:Generator_UserColumnName="ar_tasadesc" type="xs:int" minOccurs="0" />
+              <xs:element name="ar_precioanttixy1" msprop:Generator_ColumnVarNameInTable="columnar_precioanttixy1" msprop:Generator_ColumnPropNameInRow="ar_precioanttixy1" msprop:Generator_ColumnPropNameInTable="ar_precioanttixy1Column" msprop:Generator_UserColumnName="ar_precioanttixy1" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_precioanttixy2" msprop:Generator_ColumnVarNameInTable="columnar_precioanttixy2" msprop:Generator_ColumnPropNameInRow="ar_precioanttixy2" msprop:Generator_ColumnPropNameInTable="ar_precioanttixy2Column" msprop:Generator_UserColumnName="ar_precioanttixy2" type="xs:double" minOccurs="0" />
+              <xs:element name="ar_foto" msprop:Generator_ColumnVarNameInTable="columnar_foto" msprop:Generator_ColumnPropNameInRow="ar_foto" msprop:Generator_ColumnPropNameInTable="ar_fotoColumn" msprop:Generator_UserColumnName="ar_foto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable" />
+      <xs:field xpath="mstns:ar_codigo" />
+      <xs:field xpath="mstns:ar_codigobarras" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

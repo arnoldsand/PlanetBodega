@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtplanetbodega" targetNamespace="http://tempuri.org/dtplanetbodega.xsd" xmlns:mstns="http://tempuri.org/dtplanetbodega.xsd" xmlns="http://tempuri.org/dtplanetbodega.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="planetbodega" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="planetbodega (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.planetbodega" Provider="System.Data.Odbc" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="conexionplanet" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="conexionplanet (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.conexionplanet" Provider="System.Data.Odbc" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString1 (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default.ConnectionString1" Provider="System.Data.Odbc" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="_erp_db_planetlove_ConnectionString3" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="_erp_db_planetlove_ConnectionString3 (MySettings)" PropertyReference="ApplicationSettings.WindowsApplication1.My.MySettings.GlobalReference.Default._erp_db_planetlove_ConnectionString3" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="codigodebarrasTableAdapter" GeneratorDataComponentClassName="codigodebarrasTableAdapter" Name="codigodebarras" UserDataComponentName="codigodebarrasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="_erp_db_planetlove_ConnectionString3 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT * FROM `consecutivo_codigobarra_importacion` where codigodebarras is not null</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="codigo_ultimo" DataSetColumn="codigo_ultimo" />
+              <Mapping SourceColumn="codigodebarras" DataSetColumn="codigodebarras" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtplanetbodega" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dtplanetbodega" msprop:Generator_UserDSName="dtplanetbodega">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="codigodebarras" msprop:Generator_TableClassName="codigodebarrasDataTable" msprop:Generator_TableVarName="tablecodigodebarras" msprop:Generator_TablePropName="codigodebarras" msprop:Generator_RowDeletingName="codigodebarrasRowDeleting" msprop:Generator_RowChangingName="codigodebarrasRowChanging" msprop:Generator_RowEvHandlerName="codigodebarrasRowChangeEventHandler" msprop:Generator_RowDeletedName="codigodebarrasRowDeleted" msprop:Generator_UserTableName="codigodebarras" msprop:Generator_RowChangedName="codigodebarrasRowChanged" msprop:Generator_RowEvArgName="codigodebarrasRowChangeEvent" msprop:Generator_RowClassName="codigodebarrasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo_ultimo" msprop:Generator_ColumnVarNameInTable="columncodigo_ultimo" msprop:Generator_ColumnPropNameInRow="codigo_ultimo" msprop:Generator_ColumnPropNameInTable="codigo_ultimoColumn" msprop:Generator_UserColumnName="codigo_ultimo" type="xs:int" />
+              <xs:element name="codigodebarras" msprop:Generator_ColumnVarNameInTable="columncodigodebarras" msprop:Generator_ColumnPropNameInRow="codigodebarras" msprop:Generator_ColumnPropNameInTable="codigodebarrasColumn" msprop:Generator_UserColumnName="codigodebarras" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

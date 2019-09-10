@@ -1,0 +1,8 @@
+﻿Public Class frm_reporte_codigos_barra
+
+    Private Sub frm_reporte_codigos_barra_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: esta línea de código carga datos en la tabla 'DataSet1.DataTable1' Puede moverla o quitarla según sea necesario.
+        Me.DataTable1TableAdapter.Fill(Me.DataSet1.DataTable1)
+        Me.ReportViewer1.RefreshReport()
+    End Sub
+End Class

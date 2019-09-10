@@ -1,0 +1,2251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53DA8689-6831-4D7A-AD99-C189453AC4ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Planet Bodega</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>48-01 %281%29.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\maquinaubuntu\Fotos\PlanetBodega\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>file://maquinaubuntu/Fotos/PlanetBodega/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.htm</WebPage>
+    <ApplicationRevision>122</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Planet Bodega.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Planet Bodega.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2D6206EDF73627317AF4E8981FF25C06E673FCEA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>firma.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.5.4\Assemblies\v2.0\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.5.4\Assemblies\v2.0\MySql.Data.Entity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.Entity.Properties" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="MySql.Data.MySqlClient.Properties" />
+    <Import Include="MySql.Data.Types" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Web" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asignar_cant_patron_dist.Designer.vb">
+      <DependentUpon>asignar_cant_patron_dist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="asignar_cant_patron_dist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asignar_cant_patron_dist_puerta_puerta.designer.vb">
+      <DependentUpon>asignar_cant_patron_dist_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="asignar_cant_patron_dist_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clase_ean13_codigo_de_barar.vb" />
+    <Compile Include="class_library.vb" />
+    <Compile Include="Codigos de Barra para Preinspección.Designer.vb">
+      <DependentUpon>Codigos de Barra para Preinspección.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Codigos de Barra para Preinspección.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContrasenaAnulacion.Designer.vb">
+      <DependentUpon>ContrasenaAnulacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContrasenaAnulacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crear_colores.Designer.vb">
+      <DependentUpon>crear_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crear_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crear_tallas.Designer.vb">
+      <DependentUpon>crear_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crear_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dtplanetbodega.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtplanetbodega.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dtplanetbodega.vb">
+      <DependentUpon>dtplanetbodega.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="estado_gondola_pedido.Designer.vb">
+      <DependentUpon>estado_gondola_pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="estado_gondola_pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarClasificaciones.Designer.vb">
+      <DependentUpon>frmAgregarClasificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarClasificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClasificaciones.Designer.vb">
+      <DependentUpon>frmClasificaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClasificaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDevolucionesDeTiendas.Designer.vb">
+      <DependentUpon>frmDevolucionesDeTiendas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDevolucionesDeTiendas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarClasificacion.Designer.vb">
+      <DependentUpon>frmEditarClasificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarClasificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFotosImportacion.Designer.vb">
+      <DependentUpon>frmFotosImportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFotosImportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerificarExistenciaFotosArticulos.Designer.vb">
+      <DependentUpon>frmVerificarExistenciaFotosArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerificarExistenciaFotosArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdestinotransferencias.Designer.vb">
+      <DependentUpon>frmdestinotransferencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdestinotransferencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMigracionArticulos.Designer.vb">
+      <DependentUpon>frmMigracionArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMigracionArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregar_nodo.Designer.vb">
+      <DependentUpon>frm_agregar_nodo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregar_nodo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_almacenaje_x_hand_held.Designer.vb">
+      <DependentUpon>frm_almacenaje_x_hand_held.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_almacenaje_x_hand_held.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulos_faltantes_x_revision.Designer.vb">
+      <DependentUpon>frm_articulos_faltantes_x_revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulos_faltantes_x_revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cambiar_destino.Designer.vb">
+      <DependentUpon>frm_cambiar_destino.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cambiar_destino.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cambiar_numero_seccion.Designer.vb">
+      <DependentUpon>frm_cambiar_numero_seccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cambiar_numero_seccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cantidad_revision.Designer.vb">
+      <DependentUpon>frm_cantidad_revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cantidad_revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_captura_multiple.Designer.vb">
+      <DependentUpon>frm_captura_multiple.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_captura_multiple.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_codigo_de_barras_unidad_29_x_15.Designer.vb">
+      <DependentUpon>frm_codigo_de_barras_unidad_29_x_15.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_codigo_de_barras_unidad_29_x_15.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_conectar_host.Designer.vb">
+      <DependentUpon>frm_conectar_host.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_conectar_host.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_contrasena_revision.Designer.vb">
+      <DependentUpon>frm_contrasena_revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_contrasena_revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_nuevo_inventario.Designer.vb">
+      <DependentUpon>frm_crear_nuevo_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_nuevo_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_detalle_recibo.Designer.vb">
+      <DependentUpon>frm_detalle_recibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_detalle_recibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_diferencias_revision.Designer.vb">
+      <DependentUpon>frm_diferencias_revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_diferencias_revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_edicion_cantidad.Designer.vb">
+      <DependentUpon>frm_edicion_cantidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_edicion_cantidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editar_nodos.Designer.vb">
+      <DependentUpon>frm_editar_nodos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editar_nodos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar_desde_ajuste.Designer.vb">
+      <DependentUpon>frm_eliminar_desde_ajuste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar_desde_ajuste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_entradas_mercancias_suspendidas.Designer.vb">
+      <DependentUpon>frm_entradas_mercancias_suspendidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_entradas_mercancias_suspendidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_finalizar_sin_revisar.Designer.vb">
+      <DependentUpon>frm_finalizar_sin_revisar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_finalizar_sin_revisar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_generar_secciones.Designer.vb">
+      <DependentUpon>frm_generar_secciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_generar_secciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_impresion_codigo_barra_x_unidad.Designer.vb">
+      <DependentUpon>frm_impresion_codigo_barra_x_unidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_impresion_codigo_barra_x_unidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_imprimir_transferencia.Designer.vb">
+      <DependentUpon>frm_imprimir_transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_imprimir_transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_impuestos.Designer.vb">
+      <DependentUpon>frm_impuestos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_impuestos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_impuestos1.Designer.vb">
+      <DependentUpon>frm_impuestos1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_impuestos1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_impuestos2.Designer.vb">
+      <DependentUpon>frm_impuestos2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_impuestos2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_de_registros_importaciones.Designer.vb">
+      <DependentUpon>frm_listado_de_registros_importaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_de_registros_importaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_prepedidos.Designer.vb">
+      <DependentUpon>frm_mantenimiento_prepedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_prepedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_recibo_bodega.Designer.vb">
+      <DependentUpon>frm_mantenimiento_recibo_bodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_recibo_bodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_modulo_inventario.Designer.vb">
+      <DependentUpon>frm_modulo_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_modulo_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_movimiento_de_mercancia.Designer.vb">
+      <DependentUpon>frm_movimiento_de_mercancia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_movimiento_de_mercancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nuevo_recibo.Designer.vb">
+      <DependentUpon>frm_nuevo_recibo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nuevo_recibo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_password_ajustes.Designer.vb">
+      <DependentUpon>frm_password_ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_password_ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_recibir_datos_inventario.Designer.vb">
+      <DependentUpon>frm_recibir_datos_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_recibir_datos_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reporte_envio.Designer.vb">
+      <DependentUpon>frm_reporte_envio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reporte_envio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_revision.Designer.vb">
+      <DependentUpon>frm_revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seguimiento_inventario.Designer.vb">
+      <DependentUpon>frm_seguimiento_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seguimiento_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seleccionar_inventario.Designer.vb">
+      <DependentUpon>frm_seleccionar_inventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seleccionar_inventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_solicitudes_prepedidos.Designer.vb">
+      <DependentUpon>frm_solicitudes_prepedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_solicitudes_prepedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_suspedidas_almacenaje.Designer.vb">
+      <DependentUpon>frm_suspedidas_almacenaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_suspedidas_almacenaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignar.designer.vb">
+      <DependentUpon>frmAsignar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsignar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignarOperario.designer.vb">
+      <DependentUpon>frmAsignarOperario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsignarOperario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCantidad.designer.vb">
+      <DependentUpon>frmCantidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCantidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta_x_foto.designer.vb">
+      <DependentUpon>frmConsulta_x_foto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsulta_x_foto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanado.designer.vb">
+      <DependentUpon>frmDanado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDanado1.designer.vb">
+      <DependentUpon>frmDanado1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDanado1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminar5.Designer.vb">
+      <DependentUpon>frmEliminar5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminar5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInforme.designer.vb">
+      <DependentUpon>frmInforme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInforme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInformePatron.designer.vb">
+      <DependentUpon>frmInformePatron.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInformePatron.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNuevaOrden.designer.vb">
+      <DependentUpon>frmNuevaOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNuevaOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrdenProduccion.designer.vb">
+      <DependentUpon>frmOrdenProduccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrdenProduccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreInspeccion.designer.vb">
+      <DependentUpon>frmPreInspeccion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreInspeccion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPreTransferencia.designer.vb">
+      <DependentUpon>frmPreTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPreTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRevision.designer.vb">
+      <DependentUpon>frmRevision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRevision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtiqueteo.Designer.vb">
+      <DependentUpon>frmtiqueteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtiqueteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferenciaDevoluciones.designer.vb">
+      <DependentUpon>frmTransferenciaDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferenciaDevoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVer.designer.vb">
+      <DependentUpon>frmVer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_actualizaciones_de_articulo.Designer.vb">
+      <DependentUpon>frm_actualizaciones_de_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_actualizaciones_de_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregar_item_factura.Designer.vb">
+      <DependentUpon>frm_agregar_item_factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregar_item_factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregar_item_salida.Designer.vb">
+      <DependentUpon>frm_agregar_item_salida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregar_item_salida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ajustar_foto_catalogo.Designer.vb">
+      <DependentUpon>frm_ajustar_foto_catalogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ajustar_foto_catalogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ajustes_importacion.Designer.vb">
+      <DependentUpon>frm_ajustes_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ajustes_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulos_capturados_con_hand_held.Designer.vb">
+      <DependentUpon>frm_articulos_capturados_con_hand_held.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulos_capturados_con_hand_held.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_asignar_cantidades_multiples.Designer.vb">
+      <DependentUpon>frm_asignar_cantidades_multiples.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_asignar_cantidades_multiples.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_busqueda_articulos.Designer.vb">
+      <DependentUpon>frm_busqueda_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_busqueda_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_busqueda_articulos_puerta_puerta.designer.vb">
+      <DependentUpon>frm_busqueda_articulos_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_busqueda_articulos_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cambio_precios.Designer.vb">
+      <DependentUpon>frm_cambio_precios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cambio_precios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cambio_precios_puerta_puerta.designer.vb">
+      <DependentUpon>frm_cambio_precios_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cambio_precios_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_importacion_mercancia_no_importada.Designer.vb">
+      <DependentUpon>frm_crear_importacion_mercancia_no_importada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_importacion_mercancia_no_importada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_importacion_mercancia_no_importada_puerta_puerta.designer.vb">
+      <DependentUpon>frm_crear_importacion_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_importacion_mercancia_no_importada_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cruze_facturas.Designer.vb">
+      <DependentUpon>frm_cruze_facturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cruze_facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_danado_transferencia.Designer.vb">
+      <DependentUpon>frm_danado_transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_danado_transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_despacho.Designer.vb">
+      <DependentUpon>frm_despacho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_despacho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_detalles_pedidos.Designer.vb">
+      <DependentUpon>frm_detalles_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_detalles_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_detalle_devolucion.designer.vb">
+      <DependentUpon>frm_detalle_devolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_detalle_devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_detalle_transferencia.Designer.vb">
+      <DependentUpon>frm_detalle_transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_detalle_transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_diferencias_transferencia.designer.vb">
+      <DependentUpon>frm_diferencias_transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_diferencias_transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editar_cantidades.Designer.vb">
+      <DependentUpon>frm_editar_cantidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editar_cantidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_editar_pedido.Designer.vb">
+      <DependentUpon>frm_editar_pedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_editar_pedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar3.Designer.vb">
+      <DependentUpon>frm_eliminar3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar_danado.Designer.vb">
+      <DependentUpon>frm_eliminar_danado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar_danado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar_devolucion.Designer.vb">
+      <DependentUpon>frm_eliminar_devolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar_devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_entrada_de_mercancia_desde_hand_held.Designer.vb">
+      <DependentUpon>frm_entrada_de_mercancia_desde_hand_held.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_entrada_de_mercancia_desde_hand_held.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_enviar_actualizacion.Designer.vb">
+      <DependentUpon>frm_enviar_actualizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_enviar_actualizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_facturas_tabuladas.Designer.vb">
+      <DependentUpon>frm_facturas_tabuladas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_facturas_tabuladas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_faltante_liquidacion.Designer.vb">
+      <DependentUpon>frm_faltante_liquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_faltante_liquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_fotos_desde_hand_held.Designer.vb">
+      <DependentUpon>frm_fotos_desde_hand_held.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_fotos_desde_hand_held.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_importacion_mercancia_no_importada.Designer.vb">
+      <DependentUpon>frm_importacion_mercancia_no_importada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_importacion_mercancia_no_importada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_importacion_mercancia_no_importada_puerta_puerta.designer.vb">
+      <DependentUpon>frm_importacion_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_importacion_mercancia_no_importada_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_impresion_codigos_de_barra.Designer.vb">
+      <DependentUpon>frm_impresion_codigos_de_barra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_impresion_codigos_de_barra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_imprimir_codigos_barras_gondolas.Designer.vb">
+      <DependentUpon>frm_imprimir_codigos_barras_gondolas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_imprimir_codigos_barras_gondolas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_imprimir_codigos_barra_unidad.Designer.vb">
+      <DependentUpon>frm_imprimir_codigos_barra_unidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_imprimir_codigos_barra_unidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ingreso_no_importado.Designer.vb">
+      <DependentUpon>frm_ingreso_no_importado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ingreso_no_importado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ingreso_puerta_puerta_puerta_puerta.designer.vb">
+      <DependentUpon>frm_ingreso_puerta_puerta_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ingreso_puerta_puerta_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion10.Designer.vb">
+      <DependentUpon>frm_listado_importacion10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion5.Designer.vb">
+      <DependentUpon>frm_listado_importacion5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion6.Designer.vb">
+      <DependentUpon>frm_listado_importacion6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion9.Designer.vb">
+      <DependentUpon>frm_listado_importacion9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion_consulta.designer.vb">
+      <DependentUpon>frm_listado_importacion_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_proveedores5.Designer.vb">
+      <DependentUpon>frm_listado_proveedores5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_proveedores5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_proveedores6.Designer.vb">
+      <DependentUpon>frm_listado_proveedores6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_proveedores6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_proveedores7.Designer.vb">
+      <DependentUpon>frm_listado_proveedores7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_proveedores7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_devolucion.designer.vb">
+      <DependentUpon>frm_mantenimiento_devolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_devolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_de_transfencia.Designer.vb">
+      <DependentUpon>frm_mantenimiento_de_transfencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_de_transfencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferencia.Designer.vb">
+      <DependentUpon>frmTransferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ajustes.Designer.vb">
+      <DependentUpon>frm_ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_almacenaje_articulos.Designer.vb">
+      <DependentUpon>frm_almacenaje_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_almacenaje_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_almacenar_gondola.Designer.vb">
+      <DependentUpon>frm_almacenar_gondola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_almacenar_gondola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulos_procesados_liquidacion.Designer.vb">
+      <DependentUpon>frm_articulos_procesados_liquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulos_procesados_liquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulos_procesados_tiqueteo.Designer.vb">
+      <DependentUpon>frm_articulos_procesados_tiqueteo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulos_procesados_tiqueteo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consolidado_ajustes.Designer.vb">
+      <DependentUpon>frm_consolidado_ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consolidado_ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_consolidado_codigo.Designer.vb">
+      <DependentUpon>frm_consolidado_codigo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_consolidado_codigo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_detalle_ajuste.Designer.vb">
+      <DependentUpon>frm_detalle_ajuste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_detalle_ajuste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_elegir_linea_sublinea.Designer.vb">
+      <DependentUpon>frm_elegir_linea_sublinea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_elegir_linea_sublinea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar2.Designer.vb">
+      <DependentUpon>frm_eliminar2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar4.Designer.vb">
+      <DependentUpon>frm_eliminar4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar6.Designer.vb">
+      <DependentUpon>frm_eliminar6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminar_item1.Designer.vb">
+      <DependentUpon>frm_eliminar_item1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminar_item1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_entrada_mercancia.Designer.vb">
+      <DependentUpon>frm_entrada_mercancia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_entrada_mercancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_existencias_referencias.Designer.vb">
+      <DependentUpon>frm_existencias_referencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_existencias_referencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filtrado.Designer.vb">
+      <DependentUpon>frm_filtrado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filtrado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filtrado2.Designer.vb">
+      <DependentUpon>frm_filtrado2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filtrado2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_flujo_mercancia.Designer.vb">
+      <DependentUpon>frm_flujo_mercancia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_flujo_mercancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_generar_ajuste_para_gondola2.Designer.vb">
+      <DependentUpon>frm_generar_ajuste_para_gondola2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_generar_ajuste_para_gondola2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion.Designer.vb">
+      <DependentUpon>frm_listado_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listado_importacion2.Designer.vb">
+      <DependentUpon>frm_listado_importacion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listado_importacion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lista_ajustes.Designer.vb">
+      <DependentUpon>frm_lista_ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lista_ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_maestro_proveedores.Designer.vb">
+      <DependentUpon>frm_maestro_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_maestro_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mantenimiento_pedidos.Designer.vb">
+      <DependentUpon>frm_mantenimiento_pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mantenimiento_pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mercancia_no_guardad_suspedidas.Designer.vb">
+      <DependentUpon>frm_mercancia_no_guardad_suspedidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mercancia_no_guardad_suspedidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_mercancia_no_guardad_suspedidas_puerta_puerta.designer.vb">
+      <DependentUpon>frm_mercancia_no_guardad_suspedidas_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_mercancia_no_guardad_suspedidas_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nueva_tienda.Designer.vb">
+      <DependentUpon>frm_nueva_tienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nueva_tienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nuevo_ajustes.Designer.vb">
+      <DependentUpon>frm_nuevo_ajustes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nuevo_ajustes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nuevo_proveedor.Designer.vb">
+      <DependentUpon>frm_nuevo_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nuevo_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_password_liquidacion.Designer.vb">
+      <DependentUpon>frm_password_liquidacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_password_liquidacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_password_revision.designer.vb">
+      <DependentUpon>frm_password_revision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_password_revision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patron_distribucion1.designer.vb">
+      <DependentUpon>frm_patron_distribucion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patron_distribucion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patron_mercancia_no_importada.Designer.vb">
+      <DependentUpon>frm_patron_mercancia_no_importada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patron_mercancia_no_importada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patron_mercancia_no_importada_puerta_puerta.designer.vb">
+      <DependentUpon>frm_patron_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patron_mercancia_no_importada_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_planillas_ripley_codigos_nuevos.Designer.vb">
+      <DependentUpon>frm_planillas_ripley_codigos_nuevos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_planillas_ripley_codigos_nuevos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores_consulta.designer.vb">
+      <DependentUpon>frm_proveedores_consulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores_consulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores_mercancia_no_importada.Designer.vb">
+      <DependentUpon>frm_proveedores_mercancia_no_importada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores_mercancia_no_importada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores_mercancia_no_importada_puerta_puerta.designer.vb">
+      <DependentUpon>frm_proveedores_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores_mercancia_no_importada_puerta_puerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_recibo_cajas.Designer.vb">
+      <DependentUpon>frm_recibo_cajas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_recibo_cajas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_registro_dian_subpartida.designer.vb">
+      <DependentUpon>frm_registro_dian_subpartida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_registro_dian_subpartida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_reporte_de_danado.Designer.vb">
+      <DependentUpon>frm_reporte_de_danado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_reporte_de_danado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_saldos_negativos.Designer.vb">
+      <DependentUpon>frm_saldos_negativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_saldos_negativos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_salidas_mercancia.Designer.vb">
+      <DependentUpon>frm_salidas_mercancia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_salidas_mercancia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_salida_de_mercancia_desde_hand_held.Designer.vb">
+      <DependentUpon>frm_salida_de_mercancia_desde_hand_held.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_salida_de_mercancia_desde_hand_held.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seleccionarimportacion.Designer.vb">
+      <DependentUpon>frm_seleccionarimportacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seleccionarimportacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seleccionarimportacion1.designer.vb">
+      <DependentUpon>frm_seleccionarimportacion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seleccionarimportacion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seleccionar_importacion1.Designer.vb">
+      <DependentUpon>frm_seleccionar_importacion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seleccionar_importacion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seleccionar_importacion3.Designer.vb">
+      <DependentUpon>frm_seleccionar_importacion3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seleccionar_importacion3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_seleccionar_proveedor.Designer.vb">
+      <DependentUpon>frm_seleccionar_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_seleccionar_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_stock_bodega_muerta.Designer.vb">
+      <DependentUpon>frm_stock_bodega_muerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_stock_bodega_muerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_subir_codigos_ripley.designer.vb">
+      <DependentUpon>frm_subir_codigos_ripley.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_subir_codigos_ripley.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_suspendidas.Designer.vb">
+      <DependentUpon>frm_suspendidas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_suspendidas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_suspendidas1.Designer.vb">
+      <DependentUpon>frm_suspendidas1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_suspendidas1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_suspendidas_devoluciones.Designer.vb">
+      <DependentUpon>frm_suspendidas_devoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_suspendidas_devoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tabulacion_importacion.Designer.vb">
+      <DependentUpon>frm_tabulacion_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tabulacion_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_bodega_muerta.Designer.vb">
+      <DependentUpon>frm_bodega_muerta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_bodega_muerta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_codigosdebarraasociados.Designer.vb">
+      <DependentUpon>frm_codigosdebarraasociados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_codigosdebarraasociados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_codigos_asociados.Designer.vb">
+      <DependentUpon>frm_codigos_asociados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_codigos_asociados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_colores.Designer.vb">
+      <DependentUpon>frm_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_colores_tallas.Designer.vb">
+      <DependentUpon>frm_colores_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_colores_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_articulo.Designer.vb">
+      <DependentUpon>frm_crear_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lineas_sublineas.Designer.vb">
+      <DependentUpon>frm_lineas_sublineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lineas_sublineas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lista_colores.Designer.vb">
+      <DependentUpon>frm_lista_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lista_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_lista_tallas.Designer.vb">
+      <DependentUpon>frm_lista_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_lista_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_loginacceso.Designer.vb">
+      <DependentUpon>frm_loginacceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_loginacceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_articulos.Designer.vb">
+      <DependentUpon>frm_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_creacion_articulos_lotes.Designer.vb">
+      <DependentUpon>frm_creacion_articulos_lotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_creacion_articulos_lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filtrar_x_caja.Designer.vb">
+      <DependentUpon>frm_filtrar_x_caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filtrar_x_caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_articulos_lotes.Designer.vb">
+      <DependentUpon>frm_crear_articulos_lotes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_articulos_lotes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_crear_importacion.Designer.vb">
+      <DependentUpon>frm_crear_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_crear_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_parametros_importacion.Designer.vb">
+      <DependentUpon>frm_parametros_importacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_parametros_importacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_proveedores.Designer.vb">
+      <DependentUpon>frm_proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_stock_articulos.Designer.vb">
+      <DependentUpon>frm_stock_articulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_stock_articulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tallas.Designer.vb">
+      <DependentUpon>frm_tallas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tallas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tallas_colores.Designer.vb">
+      <DependentUpon>frm_tallas_colores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tallas_colores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tienda.Designer.vb">
+      <DependentUpon>frm_tienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_transferencias_desde_bodega.Designer.vb">
+      <DependentUpon>frm_transferencias_desde_bodega.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_transferencias_desde_bodega.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_patron_distribucion.Designer.vb">
+      <DependentUpon>frm_patron_distribucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_patron_distribucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_variaciones_de_precios_ripley.Designer.vb">
+      <DependentUpon>frm_variaciones_de_precios_ripley.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_variaciones_de_precios_ripley.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_articulo.Designer.vb">
+      <DependentUpon>frm_ver_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_detalles.Designer.vb">
+      <DependentUpon>frm_ver_detalles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_detalles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_detalle_factura.Designer.vb">
+      <DependentUpon>frm_ver_detalle_factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_detalle_factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_gondola_almacenar.Designer.vb">
+      <DependentUpon>frm_ver_gondola_almacenar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_gondola_almacenar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_proveedor.Designer.vb">
+      <DependentUpon>frm_ver_proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_salida.Designer.vb">
+      <DependentUpon>frm_ver_salida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_salida.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ver_tienda.Designer.vb">
+      <DependentUpon>frm_ver_tienda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ver_tienda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdi_principal.Designer.vb">
+      <DependentUpon>mdi_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mdi_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pl_cajasDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pl_cajasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="registros_importacion_articulo.Designer.vb">
+      <DependentUpon>registros_importacion_articulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registros_importacion_articulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabulacion_de_facturas.Designer.vb">
+      <DependentUpon>tabulacion_de_facturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tabulacion_de_facturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="asignar_cant_patron_dist.resx">
+      <DependentUpon>asignar_cant_patron_dist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="asignar_cant_patron_dist_puerta_puerta.resx">
+      <DependentUpon>asignar_cant_patron_dist_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Codigos de Barra para Preinspección.resx">
+      <DependentUpon>Codigos de Barra para Preinspección.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContrasenaAnulacion.resx">
+      <DependentUpon>ContrasenaAnulacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crear_colores.resx">
+      <DependentUpon>crear_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crear_tallas.resx">
+      <DependentUpon>crear_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estado_gondola_pedido.resx">
+      <DependentUpon>estado_gondola_pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarClasificaciones.resx">
+      <DependentUpon>frmAgregarClasificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClasificaciones.resx">
+      <DependentUpon>frmClasificaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDevolucionesDeTiendas.resx">
+      <DependentUpon>frmDevolucionesDeTiendas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarClasificacion.resx">
+      <DependentUpon>frmEditarClasificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFotosImportacion.resx">
+      <DependentUpon>frmFotosImportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerificarExistenciaFotosArticulos.resx">
+      <DependentUpon>frmVerificarExistenciaFotosArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdestinotransferencias.resx">
+      <DependentUpon>frmdestinotransferencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMigracionArticulos.resx">
+      <DependentUpon>frmMigracionArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregar_nodo.resx">
+      <DependentUpon>frm_agregar_nodo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_almacenaje_x_hand_held.resx">
+      <DependentUpon>frm_almacenaje_x_hand_held.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulos_faltantes_x_revision.resx">
+      <DependentUpon>frm_articulos_faltantes_x_revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cambiar_destino.resx">
+      <DependentUpon>frm_cambiar_destino.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cambiar_numero_seccion.resx">
+      <DependentUpon>frm_cambiar_numero_seccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cantidad_revision.resx">
+      <DependentUpon>frm_cantidad_revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_captura_multiple.resx">
+      <DependentUpon>frm_captura_multiple.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_codigo_de_barras_unidad_29_x_15.resx">
+      <DependentUpon>frm_codigo_de_barras_unidad_29_x_15.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_conectar_host.resx">
+      <DependentUpon>frm_conectar_host.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_contrasena_revision.resx">
+      <DependentUpon>frm_contrasena_revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_nuevo_inventario.resx">
+      <DependentUpon>frm_crear_nuevo_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_detalle_recibo.resx">
+      <DependentUpon>frm_detalle_recibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_diferencias_revision.resx">
+      <DependentUpon>frm_diferencias_revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_edicion_cantidad.resx">
+      <DependentUpon>frm_edicion_cantidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editar_nodos.resx">
+      <DependentUpon>frm_editar_nodos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar_desde_ajuste.resx">
+      <DependentUpon>frm_eliminar_desde_ajuste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_entradas_mercancias_suspendidas.resx">
+      <DependentUpon>frm_entradas_mercancias_suspendidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_finalizar_sin_revisar.resx">
+      <DependentUpon>frm_finalizar_sin_revisar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_generar_secciones.resx">
+      <DependentUpon>frm_generar_secciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_impresion_codigo_barra_x_unidad.resx">
+      <DependentUpon>frm_impresion_codigo_barra_x_unidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_imprimir_transferencia.resx">
+      <DependentUpon>frm_imprimir_transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_impuestos.resx">
+      <DependentUpon>frm_impuestos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_impuestos1.resx">
+      <DependentUpon>frm_impuestos1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_impuestos2.resx">
+      <DependentUpon>frm_impuestos2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_de_registros_importaciones.resx">
+      <DependentUpon>frm_listado_de_registros_importaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_prepedidos.resx">
+      <DependentUpon>frm_mantenimiento_prepedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_recibo_bodega.resx">
+      <DependentUpon>frm_mantenimiento_recibo_bodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_modulo_inventario.resx">
+      <DependentUpon>frm_modulo_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_movimiento_de_mercancia.resx">
+      <DependentUpon>frm_movimiento_de_mercancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nuevo_recibo.resx">
+      <DependentUpon>frm_nuevo_recibo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_password_ajustes.resx">
+      <DependentUpon>frm_password_ajustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_recibir_datos_inventario.resx">
+      <DependentUpon>frm_recibir_datos_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reporte_envio.resx">
+      <DependentUpon>frm_reporte_envio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_revision.resx">
+      <DependentUpon>frm_revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seguimiento_inventario.resx">
+      <DependentUpon>frm_seguimiento_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seleccionar_inventario.resx">
+      <DependentUpon>frm_seleccionar_inventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_solicitudes_prepedidos.resx">
+      <DependentUpon>frm_solicitudes_prepedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_suspedidas_almacenaje.resx">
+      <DependentUpon>frm_suspedidas_almacenaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignar.resx">
+      <DependentUpon>frmAsignar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignarOperario.resx">
+      <DependentUpon>frmAsignarOperario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCantidad.resx">
+      <DependentUpon>frmCantidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsulta_x_foto.resx">
+      <DependentUpon>frmConsulta_x_foto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanado.resx">
+      <DependentUpon>frmDanado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDanado1.resx">
+      <DependentUpon>frmDanado1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInforme.resx">
+      <DependentUpon>frmInforme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInformePatron.resx">
+      <DependentUpon>frmInformePatron.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevaOrden.resx">
+      <DependentUpon>frmNuevaOrden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrdenProduccion.resx">
+      <DependentUpon>frmOrdenProduccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreInspeccion.resx">
+      <DependentUpon>frmPreInspeccion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPreTransferencia.resx">
+      <DependentUpon>frmPreTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRevision.resx">
+      <DependentUpon>frmRevision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtiqueteo.resx">
+      <DependentUpon>frmtiqueteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferenciaDevoluciones.resx">
+      <DependentUpon>frmTransferenciaDevoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVer.resx">
+      <DependentUpon>frmVer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_actualizaciones_de_articulo.resx">
+      <DependentUpon>frm_actualizaciones_de_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregar_item_factura.resx">
+      <DependentUpon>frm_agregar_item_factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregar_item_salida.resx">
+      <DependentUpon>frm_agregar_item_salida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ajustar_foto_catalogo.resx">
+      <DependentUpon>frm_ajustar_foto_catalogo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ajustes_importacion.resx">
+      <DependentUpon>frm_ajustes_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulos_capturados_con_hand_held.resx">
+      <DependentUpon>frm_articulos_capturados_con_hand_held.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_asignar_cantidades_multiples.resx">
+      <DependentUpon>frm_asignar_cantidades_multiples.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_busqueda_articulos.resx">
+      <DependentUpon>frm_busqueda_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_busqueda_articulos_puerta_puerta.resx">
+      <DependentUpon>frm_busqueda_articulos_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cambio_precios.resx">
+      <DependentUpon>frm_cambio_precios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cambio_precios_puerta_puerta.resx">
+      <DependentUpon>frm_cambio_precios_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_importacion_mercancia_no_importada.resx">
+      <DependentUpon>frm_crear_importacion_mercancia_no_importada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_importacion_mercancia_no_importada_puerta_puerta.resx">
+      <DependentUpon>frm_crear_importacion_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cruze_facturas.resx">
+      <DependentUpon>frm_cruze_facturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_danado_transferencia.resx">
+      <DependentUpon>frm_danado_transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_despacho.resx">
+      <DependentUpon>frm_despacho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_detalles_pedidos.resx">
+      <DependentUpon>frm_detalles_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_detalle_devolucion.resx">
+      <DependentUpon>frm_detalle_devolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_detalle_transferencia.resx">
+      <DependentUpon>frm_detalle_transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_diferencias_transferencia.resx">
+      <DependentUpon>frm_diferencias_transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editar_cantidades.resx">
+      <DependentUpon>frm_editar_cantidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_editar_pedido.resx">
+      <DependentUpon>frm_editar_pedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar3.resx">
+      <DependentUpon>frm_eliminar3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar6.resx">
+      <DependentUpon>frm_eliminar6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar_danado.resx">
+      <DependentUpon>frm_eliminar_danado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar_devolucion.resx">
+      <DependentUpon>frm_eliminar_devolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_entrada_de_mercancia_desde_hand_held.resx">
+      <DependentUpon>frm_entrada_de_mercancia_desde_hand_held.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_enviar_actualizacion.resx">
+      <DependentUpon>frm_enviar_actualizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_facturas_tabuladas.resx">
+      <DependentUpon>frm_facturas_tabuladas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_faltante_liquidacion.resx">
+      <DependentUpon>frm_faltante_liquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_fotos_desde_hand_held.resx">
+      <DependentUpon>frm_fotos_desde_hand_held.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_importacion_mercancia_no_importada.resx">
+      <DependentUpon>frm_importacion_mercancia_no_importada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_importacion_mercancia_no_importada_puerta_puerta.resx">
+      <DependentUpon>frm_importacion_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_impresion_codigos_de_barra.resx">
+      <DependentUpon>frm_impresion_codigos_de_barra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_imprimir_codigos_barras_gondolas.resx">
+      <DependentUpon>frm_imprimir_codigos_barras_gondolas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_imprimir_codigos_barra_unidad.resx">
+      <DependentUpon>frm_imprimir_codigos_barra_unidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ingreso_no_importado.resx">
+      <DependentUpon>frm_ingreso_no_importado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ingreso_puerta_puerta_puerta_puerta.resx">
+      <DependentUpon>frm_ingreso_puerta_puerta_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion10.resx">
+      <DependentUpon>frm_listado_importacion10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion5.resx">
+      <DependentUpon>frm_listado_importacion5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion6.resx">
+      <DependentUpon>frm_listado_importacion6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion9.resx">
+      <DependentUpon>frm_listado_importacion9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion_consulta.resx">
+      <DependentUpon>frm_listado_importacion_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_proveedores5.resx">
+      <DependentUpon>frm_listado_proveedores5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_proveedores6.resx">
+      <DependentUpon>frm_listado_proveedores6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_proveedores7.resx">
+      <DependentUpon>frm_listado_proveedores7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_devolucion.resx">
+      <DependentUpon>frm_mantenimiento_devolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_de_transfencia.resx">
+      <DependentUpon>frm_mantenimiento_de_transfencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferencia.resx">
+      <DependentUpon>frmTransferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ajustes.resx">
+      <DependentUpon>frm_ajustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_almacenaje_articulos.resx">
+      <DependentUpon>frm_almacenaje_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_almacenar_gondola.resx">
+      <DependentUpon>frm_almacenar_gondola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulos_procesados_liquidacion.resx">
+      <DependentUpon>frm_articulos_procesados_liquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulos_procesados_tiqueteo.resx">
+      <DependentUpon>frm_articulos_procesados_tiqueteo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consolidado_ajustes.resx">
+      <DependentUpon>frm_consolidado_ajustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_consolidado_codigo.resx">
+      <DependentUpon>frm_consolidado_codigo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_detalle_ajuste.resx">
+      <DependentUpon>frm_detalle_ajuste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_elegir_linea_sublinea.resx">
+      <DependentUpon>frm_elegir_linea_sublinea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar2.resx">
+      <DependentUpon>frm_eliminar2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar4.resx">
+      <DependentUpon>frm_eliminar4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminar_item1.resx">
+      <DependentUpon>frm_eliminar_item1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_entrada_mercancia.resx">
+      <DependentUpon>frm_entrada_mercancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_existencias_referencias.resx">
+      <DependentUpon>frm_existencias_referencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filtrado.resx">
+      <DependentUpon>frm_filtrado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filtrado2.resx">
+      <DependentUpon>frm_filtrado2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_flujo_mercancia.resx">
+      <DependentUpon>frm_flujo_mercancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_generar_ajuste_para_gondola2.resx">
+      <DependentUpon>frm_generar_ajuste_para_gondola2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion.resx">
+      <DependentUpon>frm_listado_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listado_importacion2.resx">
+      <DependentUpon>frm_listado_importacion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lista_ajustes.resx">
+      <DependentUpon>frm_lista_ajustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_maestro_proveedores.resx">
+      <DependentUpon>frm_maestro_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mantenimiento_pedidos.resx">
+      <DependentUpon>frm_mantenimiento_pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mercancia_no_guardad_suspedidas.resx">
+      <DependentUpon>frm_mercancia_no_guardad_suspedidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_mercancia_no_guardad_suspedidas_puerta_puerta.resx">
+      <DependentUpon>frm_mercancia_no_guardad_suspedidas_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nueva_tienda.resx">
+      <DependentUpon>frm_nueva_tienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nuevo_ajustes.resx">
+      <DependentUpon>frm_nuevo_ajustes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nuevo_proveedor.resx">
+      <DependentUpon>frm_nuevo_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_password_liquidacion.resx">
+      <DependentUpon>frm_password_liquidacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_password_revision.resx">
+      <DependentUpon>frm_password_revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patron_distribucion1.resx">
+      <DependentUpon>frm_patron_distribucion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patron_mercancia_no_importada.resx">
+      <DependentUpon>frm_patron_mercancia_no_importada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patron_mercancia_no_importada_puerta_puerta.resx">
+      <DependentUpon>frm_patron_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_planillas_ripley_codigos_nuevos.resx">
+      <DependentUpon>frm_planillas_ripley_codigos_nuevos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores_consulta.resx">
+      <DependentUpon>frm_proveedores_consulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores_mercancia_no_importada.resx">
+      <DependentUpon>frm_proveedores_mercancia_no_importada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores_mercancia_no_importada_puerta_puerta.resx">
+      <DependentUpon>frm_proveedores_mercancia_no_importada_puerta_puerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_recibo_cajas.resx">
+      <DependentUpon>frm_recibo_cajas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_registro_dian_subpartida.resx">
+      <DependentUpon>frm_registro_dian_subpartida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_reporte_de_danado.resx">
+      <DependentUpon>frm_reporte_de_danado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_saldos_negativos.resx">
+      <DependentUpon>frm_saldos_negativos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_salidas_mercancia.resx">
+      <DependentUpon>frm_salidas_mercancia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_salida_de_mercancia_desde_hand_held.resx">
+      <DependentUpon>frm_salida_de_mercancia_desde_hand_held.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seleccionarimportacion.resx">
+      <DependentUpon>frm_seleccionarimportacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seleccionarimportacion1.resx">
+      <DependentUpon>frm_seleccionarimportacion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seleccionar_importacion1.resx">
+      <DependentUpon>frm_seleccionar_importacion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seleccionar_importacion3.resx">
+      <DependentUpon>frm_seleccionar_importacion3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_seleccionar_proveedor.resx">
+      <DependentUpon>frm_seleccionar_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_stock_bodega_muerta.resx">
+      <DependentUpon>frm_stock_bodega_muerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_subir_codigos_ripley.resx">
+      <DependentUpon>frm_subir_codigos_ripley.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_suspendidas.resx">
+      <DependentUpon>frm_suspendidas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_suspendidas1.resx">
+      <DependentUpon>frm_suspendidas1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_suspendidas_devoluciones.resx">
+      <DependentUpon>frm_suspendidas_devoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tabulacion_importacion.resx">
+      <DependentUpon>frm_tabulacion_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_bodega_muerta.resx">
+      <DependentUpon>frm_bodega_muerta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_codigosdebarraasociados.resx">
+      <DependentUpon>frm_codigosdebarraasociados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_codigos_asociados.resx">
+      <DependentUpon>frm_codigos_asociados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_colores_tallas.resx">
+      <DependentUpon>frm_colores_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_articulo.resx">
+      <DependentUpon>frm_crear_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lineas_sublineas.resx">
+      <DependentUpon>frm_lineas_sublineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lista_colores.resx">
+      <DependentUpon>frm_lista_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_lista_tallas.resx">
+      <DependentUpon>frm_lista_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_loginacceso.resx">
+      <DependentUpon>frm_loginacceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_articulos.resx">
+      <DependentUpon>frm_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_colores.resx">
+      <DependentUpon>frm_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_creacion_articulos_lotes.resx">
+      <DependentUpon>frm_creacion_articulos_lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_articulos_lotes.resx">
+      <DependentUpon>frm_crear_articulos_lotes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_crear_importacion.resx">
+      <DependentUpon>frm_crear_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filtrar_x_caja.resx">
+      <DependentUpon>frm_filtrar_x_caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_parametros_importacion.resx">
+      <DependentUpon>frm_parametros_importacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_proveedores.resx">
+      <DependentUpon>frm_proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_stock_articulos.resx">
+      <DependentUpon>frm_stock_articulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tallas.resx">
+      <DependentUpon>frm_tallas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tallas_colores.resx">
+      <DependentUpon>frm_tallas_colores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tienda.resx">
+      <DependentUpon>frm_tienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_transferencias_desde_bodega.resx">
+      <DependentUpon>frm_transferencias_desde_bodega.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_patron_distribucion.resx">
+      <DependentUpon>frm_patron_distribucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_variaciones_de_precios_ripley.resx">
+      <DependentUpon>frm_variaciones_de_precios_ripley.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_articulo.resx">
+      <DependentUpon>frm_ver_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_detalles.resx">
+      <DependentUpon>frm_ver_detalles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_detalle_factura.resx">
+      <DependentUpon>frm_ver_detalle_factura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_gondola_almacenar.resx">
+      <DependentUpon>frm_ver_gondola_almacenar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_proveedor.resx">
+      <DependentUpon>frm_ver_proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_salida.resx">
+      <DependentUpon>frm_ver_salida.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ver_tienda.resx">
+      <DependentUpon>frm_ver_tienda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdi_principal.resx">
+      <DependentUpon>mdi_principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registros_importacion_articulo.resx">
+      <DependentUpon>registros_importacion_articulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="tabulacion_de_facturas.resx">
+      <DependentUpon>tabulacion_de_facturas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dtplanetbodega.xsc">
+      <DependentUpon>dtplanetbodega.xsd</DependentUpon>
+    </None>
+    <None Include="dtplanetbodega.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtplanetbodega.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dtplanetbodega.xss">
+      <DependentUpon>dtplanetbodega.xsd</DependentUpon>
+    </None>
+    <None Include="firma.snk" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Planet Bodega_ClaveTemporal.pfx" />
+    <None Include="Planet Bodega_TemporaryKey.pfx" />
+    <None Include="planetbodegafirma.pfx" />
+    <None Include="pl_cajasDataSet.xsc">
+      <DependentUpon>pl_cajasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pl_cajasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pl_cajasDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pl_cajasDataSet.xss">
+      <DependentUpon>pl_cajasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banned User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application_form_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="48-01 %281%29.ico" />
+    <Content Include="48-01.ico" />
+    <None Include="Resources\edit-undo.png" />
+    <None Include="Resources\write.png" />
+    <None Include="Resources\coffee_store.png" />
+    <None Include="Resources\table_multiple %281%29.png" />
+    <None Include="Resources\link.png" />
+    <None Include="Resources\page1.png" />
+    <None Include="Resources\mail1.png" />
+    <None Include="Resources\datoshost.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\datoshost.bmp" />
+    <None Include="Resources\page_remove.png" />
+    <None Include="Resources\sinfoto.jpg" />
+    <None Include="Resources\shopping_cart.png" />
+    <None Include="Resources\database_up.png" />
+    <None Include="Resources\repeat1.png" />
+    <None Include="Resources\shopping_cart_accept.png" />
+    <None Include="Resources\printer2.png" />
+    <None Include="Resources\remove3.png" />
+    <None Include="Resources\add_to_shopping_cart1.png" />
+    <None Include="Resources\printer1.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\search_database.png" />
+    <None Include="Resources\calculator_add.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\zoom_in.png" />
+    <None Include="Resources\seattle skyline.jpg" />
+    <None Include="Resources\remove2.png" />
+    <None Include="Resources\notes_edit.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\remove_from_shopping_cart.png" />
+    <None Include="Resources\add_to_shopping_cart.png" />
+    <None Include="Resources\calculator.png" />
+    <None Include="Resources\Untitled-1-01.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\page_search.png" />
+    <None Include="Resources\repeat.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\accept2.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\add_to_database.png" />
+    <None Include="Resources\process.png" />
+    <None Include="Resources\page_white_excel.png" />
+    <None Include="Resources\application_form.png" />
+    <None Include="Resources\accept1.png" />
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
